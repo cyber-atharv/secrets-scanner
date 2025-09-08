@@ -1,0 +1,49 @@
+# ==============================================================================
+# SECURITY-HARDENED .gitignore
+# Prevents accidental commits of credentials, private keys, and environment files
+# ==============================================================================
+
+# Environment & Secret Files
+.env
+.env.*
+!.env.example
+!.env.*.example
+*.env
+*.env.local
+
+# Private Keys, Certificates, & Keystores
+*.pem
+*.key
+*.pkcs12
+*.pfx
+*.p12
+*.crt
+*.csr
+id_rsa
+id_rsa.pub
+id_ed25519
+id_ed25519.pub
+
+# Cloud & System Credentials
+.aws/
+.azure/
+.gcp/
+.dockercfg
+.docker/config.json
+.netrc
+.npmrc
+credentials.json
+
+# Dependencies & Build Artifacts
+node_modules/
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+target/
+bin/
+obj/
+dist/
+build/
+.DS_Store
+Thumbs.db

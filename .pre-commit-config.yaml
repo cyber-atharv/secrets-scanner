@@ -1,0 +1,14 @@
+repos:
+  - repo: https://github.com/GitGuardian/ggshield
+    rev: v1.34.0
+    hooks:
+      - id: ggshield
+        name: GitGuardian Shield (Secret Scanner)
+        stages: [commit]
+  - repo: https://github.com/pre-commit/pre-commit-hooks
+    rev: v4.6.0
+    hooks:
+      - id: detect-private-key
+      - id: check-added-large-files
+      - id: end-of-file-fixer
+      - id: trailing-whitespace
