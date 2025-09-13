@@ -11,3 +11,6 @@ All notable changes to secrets-scanner will be documented in this file.
 ## [0.1.2] - 2025-09-12
 - feat: support git commit history traversal and branch scanning
 
+## [0.1.3] - 2025-09-13
+- perf: parallelize file tree scanning using worker pools
+
