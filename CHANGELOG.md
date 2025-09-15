@@ -14,3 +14,6 @@ All notable changes to secrets-scanner will be documented in this file.
 ## [0.1.3] - 2025-09-13
 - perf: parallelize file tree scanning using worker pools
 
+## [0.1.4] - 2025-09-15
+- fix: reduce false positives on UUIDs and hash strings
+
